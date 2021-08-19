@@ -1,0 +1,9 @@
+name            sparen
+version         0.1.1
+description     Flexible logging class
+company         wheresjames
+author          Robert Umbehant
+email           sparen@wheresjames.com
+url             https://github.com/wheresjames/sparen-js
+repo            git+ssh://git@github.com/wheresjames/sparen-js.git
+license         MIT
