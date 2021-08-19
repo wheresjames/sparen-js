@@ -67,9 +67,8 @@ graph plotting, and ascii drawing.
 ---------------------------------------------------------------------
 ## References
 
-- Python
-    - https://www.python.org/
+- Node.js
+    - https://nodejs.org/
 
-- pip
-    - https://pip.pypa.io/en/stable/
-
+- npm
+    - https://www.npmjs.com/
