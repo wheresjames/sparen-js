@@ -31,6 +31,7 @@ graph plotting, and ascii drawing.
 ---------------------------------------------------------------------
 ## Examples
 
+### Simple logging
 ``` javascript
 
     const sparen = require('sparen');
@@ -61,7 +62,7 @@ graph plotting, and ascii drawing.
 ```
 ![plot](./img/logtxt.png)
 
-
+### Array plots
 ``` javascript
 
     let plot = sparen.initArray(200, (i)=>Math.sin(i * Math.PI * 6 / 200) * 10);
@@ -70,7 +71,7 @@ graph plotting, and ascii drawing.
 ```
 ![plot](./img/logplot.png)
 
-
+### Canvas drawing
 ``` javascript
 
     let canv = new sparen.Canvas(80, 25, 2);
@@ -103,7 +104,7 @@ graph plotting, and ascii drawing.
 ```
 ![plot](./img/logdraw.png)
 
-
+### Canvas line drawing
 ``` javascript
 
     canv = new sparen.Canvas(80, 25, 1);
