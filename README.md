@@ -60,7 +60,7 @@ graph plotting, and ascii drawing.
     }
 
 ```
-![plot](./img/logtxt.png)
+![plot](https://raw.githubusercontent.com/wheresjames/sparen-js/master/img/logtxt.png)
 
 ### Array plots
 ``` javascript
@@ -69,7 +69,7 @@ graph plotting, and ascii drawing.
     Log('PLOT\n' + sparen.plotArray(plot) + "\n");
 
 ```
-![plot](./img/logplot.png)
+![plot](https://raw.githubusercontent.com/wheresjames/sparen-js/master/img/logplot.png)
 
 ### Canvas drawing
 ``` javascript
@@ -102,7 +102,7 @@ graph plotting, and ascii drawing.
     Log("First Example\n" + canv.toString());
 
 ```
-![plot](./img/logdraw.png)
+![plot](https://raw.githubusercontent.com/wheresjames/sparen-js/master/img/logdraw.png)
 
 ### Canvas line drawing
 ``` javascript
@@ -137,7 +137,7 @@ graph plotting, and ascii drawing.
     Log("Second Example\n" + canv.toString());
 
 ```
-![plot](./img/loglines.png)
+![plot](https://raw.githubusercontent.com/wheresjames/sparen-js/master/img/loglines.png)
 
 
 &nbsp;
