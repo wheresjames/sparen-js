@@ -37,9 +37,15 @@ graph plotting, and ascii drawing.
     const sparen = require('sparen');
     const Log = sparen.log;
 
-    sparen.log('This is a message');
+    // Save to a disk file
+    // sparen.obj.setLogFile('./sparen.log');
 
+    // Output to stderr instead of stdout
+    // sparen.obj.setLogFunction(console.error);
+
+    // Add color filters
     sparen.addLogFilters('info:blue,warning:yellow,error:red');
+
     Log('This is information');
     Log('This is a warning');
     Log('This is an error');

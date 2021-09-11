@@ -1,10 +1,11 @@
 #!/usr/bin/env nodejs
 'use strict';
 
-const sparen = require('sparen');
 const assert = require('assert');
+const sparen = require('sparen');
 
 const Log = sparen.log;
+const Err = sparen.log;
 const Fmt = JSON.stringify;
 
 function test_1()
@@ -28,7 +29,7 @@ function test_1()
     }
     catch(e)
     {
-        Log('CAPTURED EXCEPTION', e);
+        Err('CAPTURED EXCEPTION', e);
     }
 
     let sz = 200;
@@ -180,6 +181,12 @@ function main()
 {
     let run = process.argv.slice(2).join(',');
 
+    // Save to a disk file
+    // sparen.obj.setLogFile('./sparen.log');
+
+    // Output to stderr
+    // sparen.obj.setLogFunction(console.error);
+
     Log(Fmt(sparen.__info__, null, 2));
     Log("--- START TESTS ---\n");
 
@@ -187,9 +194,9 @@ function main()
     let tests = [test_1, test_2, test_3, test_4, test_5];
     for (let k in tests)
         if (isCmd(run, String(parseInt(k)+1)))
-        {   console.log('\n-----------------------------------------------------------');
-            console.log(` - ${tests[k].name}()`);
-            console.log('-----------------------------------------------------------\n');
+        {   Log('-----------------------------------------------------------');
+            Log(` - ${tests[k].name}()`);
+            Log('-----------------------------------------------------------\n');
             tests[k]();
         }
 
